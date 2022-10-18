@@ -1,0 +1,153 @@
+.menu__icon-menu,
+.menu__icon-close {
+  display: block;
+  fill: currentColor;
+}
+
+.menu__button {
+  display: none;
+  padding: $paddingBtnMenuMobile;
+  color: $colorIconMenu;
+  & .menu__icon-menu {
+    display: block;
+  }
+  & .menu__icon-close {
+    display: none;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
+  }
+
+  @media screen and (max-width: 767px) {
+    @include positioning-flex();
+  }
+}
+
+.menu__button.is-open {
+  & .menu__icon-menu {
+    display: none;
+  }
+  & .menu__icon-close {
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
+  }
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    background-color: inherit;
+    transform: translateY(-100%);
+    width: 100%;
+    opacity: 0;
+    transition: transform $transitionDurationPrimary $transitionTimingPrimary,
+      opacity $transitionDurationPrimary $transitionTimingPrimary;
+    margin: 0 auto;
+  }
+}
+
+.menu__backdrop.is-open .menu {
+  @media screen and (max-width: 767px) {
+    transform: translateY(0);
+    opacity: 1;
+    box-shadow: $shadowMenu;
+    transition: transform $transitionDurationPrimary $transitionTimingPrimary,
+      opacity $transitionDurationPrimary $transitionTimingPrimary;
+  }
+}
+
+.menu__set {
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    @include positioning-flex();
+  }
+}
+
+.menu__item {
+  display: block;
+  width: 100%;
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid $colorBorderBottomMenuMobile;
+  }
+}
+
+.menu__link {
+  display: block;
+  color: inherit;
+  background-color: inherit;
+  padding: $paddingItemMenuMobile;
+  transition: color $transitionDurationPrimary $transitionTimingPrimary,
+    background-color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    color: $colorHeading;
+    background-color: $colorAccentSecondary;
+  }
+}
+
+.menu__link--accent {
+  width: 100%;
+  font-weight: $fontWeightBold;
+  color: $colorHeading;
+  background-color: $colorAccentPrimary;
+  transition: background-color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    color: $colorHeading;
+    background-color: $bgcAccentPrimaryHover;
+  }
+}
+
+.menu__btn-arrow {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 120;
+
+  width: 2rem;
+  height: 2rem;
+  @media screen and (min-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  color: #ffffff;
+  background-color: $colorAccentSecondary;
+  border: none;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(0);
+  transition: transform $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    transform: rotate(-45deg);
+  }
+}
+
+.menu__icon-arrow {
+  display: block;
+
+  width: 18px;
+  height: 21px;
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 30px;
+  }
+  fill: currentColor;
+}
+
+.header.is-visible .menu__btn-arrow {
+  display: none;
+}
+
+.header .menu__btn-arrow {
+  @include positioning-flex();
+}

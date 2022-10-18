@@ -1,0 +1,47 @@
+.header {
+  // position: fixed;
+  // top: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 100;
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  background-color: $bgcPage;
+  padding: $paddingHeaderMobile;
+
+  @media screen and (min-width: 768px) {
+    padding: $paddingHeaderTablet;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: $paddingHeaderDesctop;
+  }
+}
+
+.header__container {
+  @include positioning-flex($jc: start);
+}
+
+.logo_header {
+  margin-right: auto;
+}
+
+.menu__backdrop {
+  @media screen and (max-width: 767px) {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $bgcAccentHero;
+    transition: visibility $transitionDurationPrimary $transitionTimingPrimary;
+    z-index: 110;
+  }
+}
+
+.menu__backdrop.is-open {
+  @media screen and (max-width: 767px) {
+    visibility: visible;
+  }
+}

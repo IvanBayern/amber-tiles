@@ -1,0 +1,68 @@
+// :root {
+// }
+
+$colorHeadingOnLight: #181823;
+$colorParagraph: #8491a0;
+$colorParagraphOnLight: #5b6876;
+$colorHeading: #ffffff;
+$colorAccentPrimary: #25c2a0;
+$colorAccentSecondary: #ff6b0a;
+$colorBorderBottomMenuMobile: rgba(255, 255, 255, 0.12);
+$colorMenuMobile: rgba(255, 255, 255, 0.7);
+$colorIconMenu: #c4c4c4;
+$colorBtnArrow: #515151;
+
+$bgcFooter: #181823;
+$bgcPage: #000000;
+$bgcAccentSecondary: #fff3e4;
+$bgcAccentPrimary: #faf2f2;
+$bgcAccentPrimaryHover: #1a8870;
+$bgcMenuMobile: rgba(0, 0, 0, 0);
+$bgcAccentHero: #181823;
+$bgcBtnArrow: rgba(255, 255, 255, 0.2);
+$bgcBtnArrowHover: rgba(255, 255, 255, 0.4);
+
+$fontFamilyPrimary: 'Sen';
+$fontFamilyAlternative: 'sans-serif';
+
+$fontSizeLabel: 7.3125rem;
+$fontSizeH1: 4.875rem;
+$fontSizeH2: 3.4375rem;
+$fontSizeH3: 1.5rem;
+$fontSizeH4: 1.125rem;
+$fontSizeH5: 1rem;
+$fontSizeBodyPrimary: 1.125rem;
+$fontSizeBodySecondary: 1rem;
+$fontSizeOverline: 1rem;
+$fontSizeBtn: 1.125rem;
+
+$fontWeightBold: 700;
+
+$lineHeightPrimary: 1.6875rem;
+
+$paddingHeaderMobile: 0 1.25rem;
+$paddingHeaderTablet: 0rem 2.5rem;
+$paddingHeaderDesctop: 0rem 4.5rem;
+
+$paddingContainerMobile: 3rem 1.25rem;
+$paddingContainerTablet: 5rem 2.5rem;
+$paddingContainerDesctop: 7.5rem 4.5rem;
+
+$paddingFooterMobile: 3rem 1.25rem;
+$paddingFooterTablet: 5rem 2.5rem;
+$paddingFooterDesctop: 5rem 4.5rem;
+
+$paddingLinkMenuHeader: 2rem 1.5rem;
+$paddingBtnMenuMobile: 1.5rem 0;
+$paddingItemMenuMobile: 2rem 1.5rem;
+
+$heitghHeader360: 4.5rem;
+$heitghHeader768Plus: 5.5rem;
+
+$transitionDurationPrimary: 250ms;
+$transitionDurationSecondary: 400ms;
+$transitionTimingPrimary: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionTimingSecondary: ease;
+
+$shadowMenu: 0px 4px 8px rgba(255, 255, 255, 0.04), 0px 2px 4px rgba(255, 255, 255, 0.08),
+  0px 1px 3px rgba(255, 255, 255, 0.16);

@@ -1,0 +1,92 @@
+.skillset__upperblock {
+  margin-bottom: 3rem;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    @include positioning-flex(flex, start, stretch);
+  }
+}
+.skillset__block {
+  @media screen and (min-width: 1200px) {
+    @include positioning-flex(flex, start, stretch);
+  }
+
+  & + & {
+    margin-top: 3rem;
+  }
+}
+
+.skillset__title,
+.skillset__subtitle {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 1rem);
+  }
+}
+
+.skillset__subtitle {
+  @include font-params(1.5rem, normal, 1.5);
+}
+
+.skillset__text {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 67%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(200% / 3 + 1rem);
+  }
+}
+
+.skillset__list {
+  @include positioning-flex($jc: start);
+  flex-wrap: wrap;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: -1.5rem;
+    margin-top: -3rem;
+    width: calc(200% / 3);
+  }
+}
+
+.skillset__item {
+  display: block;
+  flex-basis: calc(50% - 1.5rem);
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(25% - 1.5rem);
+    margin-top: 3rem;
+  }
+}
+
+.skillset__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1.5rem;
+  transform: scale(1);
+  transition: transform $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+  }
+}
+
+.skillset__title--append,
+.skillset__subtitle--append {
+  margin-bottom: 1.5rem;
+}
+
+.skillset__subtitle--accent {
+  color: $colorAccentSecondary;
+  font-weight: $fontWeightBold;
+}

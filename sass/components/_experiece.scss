@@ -1,0 +1,47 @@
+.experience__title {
+  @include font-params(2rem);
+  margin-bottom: 2.5rem;
+  @media screen and (min-width: 768px) {
+    @include font-params(3.4375rem);
+  }
+}
+
+.experience__list {
+  display: block;
+  @media screen and (min-width: 768px) {
+    @include positioning-flex(flex, start, stretch);
+    margin-left: -40px;
+  }
+}
+
+.experience__item {
+  display: block;
+  & + & {
+    @media screen and (max-width: 767px) {
+      margin-top: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 40px);
+    margin-left: 40px;
+  }
+}
+
+.experience__label {
+  display: block;
+  @include font-params($fs: 7.3125rem, $c: $colorParagraph);
+}
+
+.experience__subtitle {
+  @include font-params($fs: 1.5rem, $lh: 1.5);
+  margin-bottom: 1rem;
+  &--accent-primary {
+    color: $colorAccentPrimary;
+  }
+  &--accent-secondary {
+    color: $colorAccentSecondary;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+}

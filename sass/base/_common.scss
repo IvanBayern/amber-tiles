@@ -1,0 +1,54 @@
+body {
+  font-family: $fontFamilyPrimary, $fontFamilyAlternative;
+  background-color: $bgcPage;
+  color: $colorParagraph;
+  font-size: $fontSizeBodyPrimary; /* 1.125rem */
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.heading-h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: $fontWeightBold;
+  color: $colorHeading;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.7rem;
+  }
+}
+
+.heading-h2--on-light {
+  color: $colorHeadingOnLight;
+}
+
+.paragraph-16 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.paragraph-18 {
+  line-height: 1.5;
+}
+
+.paragraph-18--on-light {
+  color: $colorParagraphOnLight;
+}
+
+.paragraph-18--white {
+  color: $colorHeading;
+}
+
+.overline-16 {
+  font-size: 1rem;
+  font-weight: $fontWeightBold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.overline-16__container {
+  margin-bottom: 0.5rem;
+}

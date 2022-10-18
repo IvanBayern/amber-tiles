@@ -1,0 +1,65 @@
+.about-me__section {
+  @media screen and (min-width: 768px) {
+    @include positioning-flex();
+  }
+}
+
+.about-me__container {
+  width: 100%;
+  height: 450px;
+  background-color: $bgcAccentSecondary;
+  color: $colorHeadingOnLight;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    height: 600px;
+  }
+  @include positioning-flex(flex, start, flex-start);
+  flex-direction: column;
+}
+
+.about-me__title--append {
+  margin-bottom: 1.5rem;
+}
+
+.about-me__btn {
+  margin-top: auto;
+}
+
+.about-me__img {
+  width: 100%;
+  height: 450px;
+  background-color: $bgcAccentSecondary;
+  background-image: url(../images/sphere-767.jpeg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/sphere-1534.jpeg);
+  }
+  background-position: center;
+  background-size: cover;
+  color: $colorHeadingOnLight;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    height: 600px;
+    background-image: url(../images/sphere-600.jpeg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sphere-1200.jpeg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/sphere-800.jpeg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sphere-1600.jpeg);
+    }
+  }
+}

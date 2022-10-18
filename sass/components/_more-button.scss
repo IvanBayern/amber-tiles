@@ -1,0 +1,17 @@
+.more-btn {
+  @include font-params(1rem, normal, 1.5, inherit);
+  border-bottom: 1px solid $colorHeadingOnLight;
+  background-color: transparent;
+  padding: 0.5rem 0;
+  transition: background-color $transitionDurationPrimary $transitionTimingPrimary,
+    padding $transitionDurationPrimary $transitionTimingPrimary,
+    color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccentPrimary;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid transparent;
+    color: $colorHeading;
+  }
+}

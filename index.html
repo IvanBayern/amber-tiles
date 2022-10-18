@@ -1,148 +1,494 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<!-- header-section -->
-		<header class="header">
-			<a class="header-logo" href="./">
-				<img
-					class="header-image"
-					src="./images/boselogo.svg"
-					alt="логотип"
-					width="130"
-					height="15"
-			/></a>
-			<nav class="header-nav">
-				<ul class="header-list">
-					<li class="header-item">
-						<a class="header-link" href="">Характеристики</a>
-					</li>
-					<li class="header-item">
-						<a class="header-link" href="">История</a>
-					</li>
-					<li class="header-item"><a class="header-link" href="">Отзывы</a></li>
-					<li class="header-item">
-						<a class="header-link" href="">Оплата и доставка</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Andrii Barchuk - Frontend Developer</title>
 
-		<main>
-			<!-- hero-section -->
-			<section class="hero">
-				<div class="hero-group">
-					<p class="hero-text">
-						Наушники с шумоподавлением, которые способны на многое
-					</p>
-					<p class="hero-text">До 20 часов воспроизведения</p>
-				</div>
-				<h1 class="hero-title">Наушники Bose NC 700</h1>
-				<button class="hero-btn" type="button">Заказать</button>
-				<img
-					class="hero-img"
-					src="./images/img.jpg"
-					alt=""
-					width="700"
-					height="598"
-				/>
-			</section>
+    <meta content="Andrii Barchuk is a Frontend Developer from Kyiv, Ukraine." name="description" />
+    <meta content="Andrii Barchuk - Frontend Developer" property="og:title" />
+    <meta
+      content="Andrii Barchuk is a Frontend Developer from Kyiv, Ukraine."
+      property="og:description"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="" body>
+    <header class="header">
+      <div class="header__container">
+        <a id="logo" href="/" class="logo logo_header"
+          ><span class="logo__decoration">Andrii&nbsp;&nbsp;&nbsp;Barchuk</span>
+        </a>
+        <button
+          class="menu__button"
+          aria-expanded="false"
+          aria-controls="menu-backdrop"
+          data-menu-button
+        >
+          <svg aria-label="Control button of menu-bar" width="18" height="18">
+            <use href="./images/icons.svg#icon-menu" class="menu__icon-menu"></use>
+            <use href="./images/icons.svg#icon-close" class="menu__icon-close"></use>
+          </svg>
+        </button>
 
-			<!-- benefits-section -->
-			<section class="benefits">
-				<img
-					class="benefits-img"
-					src="./images/benefits/img2.jpg"
-					alt="Премиальныйдизайн и комфорт"
-					width="590"
-					height="616"
-				/>
-				<h2 class="benefits-title">Премиальныйдизайн и комфорт</h2>
-				<ul class="benefits-list">
-					<li class="benefits-item">
-						<h3 class="benefits-subtitle">11 уровней шумоподавления</h3>
-						<p class="benefits-text">
-							С новыми наушниками Bose Noise Cancelling Headphone 700 можно
-							плавно увеличить или уменьшить уровень шумоподавления. Вас слышно
-							отлично и вы слышите собеседника четко, даже в шумной обстановке!
-						</p>
-					</li>
+        <div id="menu-backdrop" class="menu__backdrop" data-menu>
+          <nav role="navigation" class="menu" id="menu">
+            <ul class="menu__set">
+              <li class="menu__item">
+                <a href="#experience" class="menu__link">Experience</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link menu__link--accent">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-					<li class="benefits-item">
-						<h3 class="benefits-subtitle">Комфорт на максимум</h3>
-						<p class="benefits-text">
-							Стильная, легкая дужка из нержавеющей стали с мягкими,
-							расположенными под углом чашками наушников для комфортной посадки.
-							Внутренняя сторона выполнена из мягкой гелевой подкладки, которая
-							хорошо прилегает к голове.
-						</p>
-					</li>
-				</ul>
-			</section>
+      <button class="menu__btn-arrow" type="button" data-menu-button-arrow>
+        <a href="#logo" class="menu__link-arrow">
+          <svg class="menu__icon-arrow">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </button>
+    </header>
 
-			<!-- feature -->
-			<section class="features">
-				<h2 class="features-title">способны на многое</h2>
-				<ul class="features-list">
-					<li class="features-item">Возможность принимать звонки</li>
-					<li class="features-item">Непревзойденная система микрофонов</li>
-					<li class="features-item">Насыщенное и мощное звучание</li>
-					<li class="features-item">Поддержка голосовых помощников</li>
-					<li class="features-item">Опция активного шумоподавления</li>
-					<li class="features-item">
-						Аудиоплатформа дополненной реальности Bose AR
-					</li>
-				</ul>
-			</section>
+    <main>
+      <section class="section section__hero">
+        <div class="hero__decoration"></div>
+        <div class="hero__thumb" data-aos="fade-right" data-aos-duration="1000">
+          <picture class="hero__picture">
+            <source
+              srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x"
+              media="(min-width: 768px) and (max-width: 1199px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="./images/hero-767.jpeg 1x, ./images/hero-1534.jpeg 2x"
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <img
+              class="hero__img"
+              srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x"
+              alt="My black and white photo"
+            />
+          </picture>
+        </div>
 
-			<!-- promo-section -->
-			<section class="promo">
-				<h2 class="promo-title">Роскошь тишины</h2>
-				<ul class="list">
-					<li class="item">
-						<h3 class="subtitle">Максимальное наслаждение</h3>
-						<p class="text">
-							Для того чтобы создать комфортную атмосферу — поднимайте уровень
-							за уровнем от "прозрачного" режима до максимального блокирования
-							звуков. Режим разговора можно активировать в один клик с помощью
-							специальной кнопки.
-						</p>
-					</li>
-					<li class="item">
-						<h3 class="subtitle">Хрустальный звук</h3>
-						<p class="text">
-							Система динамиков и фирменный активный эквалайзер способны
-							обеспечить качественный и мощный звук на любом уровне громкости.
-							Вы можете быть уверены в отсутствии искажений и кристальной
-							чистоте высоких и низких частот.
-						</p>
-					</li>
-				</ul>
-			</section>
+        <div class="container__hero">
+          <h1 class="hero__heading" data-aos="fade-left" data-aos-duration="1000">
+            I’m Andrii Barchuk.<br />
+            A Frontend Developer
+            <span class="hero__heading--accent">based in Ukraine.</span>
+          </h1>
+          <p
+            class="paragraph-18 paragraph-18--white"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            I have all the necessary knowledges and skills, which I undergone intensive training in
+            GoIT school. If you have a great project that needs my skills, I'm your guy.
+          </p>
+        </div>
+      </section>
 
-			<!-- section technology -->
-			<section class="technology">
-				<h2 class="technology-title">Bose AR</h2>
-				<h3 class="technology-subtitle">Фирменная технология</h3>
-				<p class="technology-text">
-					Bose AR — это уникальная аудиоплатформа дополненной реальности, что
-					открывает перед вами новые грани звучания. Она позволяет вам
-					оставаться на связи с реальным миром и одновременно погружаться в
-					виртуальную вселенную.
-				</p>
-				<img
-					class="technology-img"
-					src="./images/img4.jpg"
-					alt="technologieses"
-					width="700"
-					height="586"
-				/>
-			</section>
-		</main>
-	</body>
+      <section class="section" id="experience">
+        <div class="container">
+          <b class="overline-16 overline-16__container">My experience</b>
+          <h2 class="experience__title">Experience I have had in the past</h2>
+          <ul class="experience__list">
+            <li class="experience__item" data-aos="fade-right" data-aos-duration="1000">
+              <strong class="experience__label">01</strong>
+              <h3 class="experience__subtitle experience__subtitle__container">
+                <span class="experience__subtitle--accent-primary">GoIT</span>, Fullstack Developer
+                courses
+              </h3>
+              <p class="paragraph-16">
+                Real online education with theoratical and practical experience.
+              </p>
+            </li>
+            <li
+              class="experience__item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <strong class="experience__label">02</strong>
+              <h3 class="experience__subtitle">
+                <span class="experience__subtitle--accent-primary">Freelance</span>, Frontend
+                Trainee
+              </h3>
+              <p class="paragraph-16">
+                Building websites from scratch, development of the website structure and the design
+                layouts.
+              </p>
+            </li>
+            <li
+              class="experience__item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <strong class="experience__label">03</strong>
+              <h3 class="experience__subtitle">
+                <span class="experience__subtitle--accent-secondary">Your Company</span>, Frontend
+                Junior
+              </h3>
+              <p class="paragraph-16">
+                Looking for a friendly team with career growth and training opportunities.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section about-me__section">
+        <div class="container about-me__container">
+          <h2 class="heading-h2 heading-h2--on-light about-me__title--append">
+            Philosophy & values
+          </h2>
+          <p class="paragraph-18 paragraph-18--on-light">
+            I think everyone wants the same thing - relationship with humanity, peace with the
+            metaphysical, and experience with the universe. I try to grasp these things with my
+            values: authenticity, creativity, & professionalism.
+          </p>
+          <button id="about-me-btn" type="button" class="more-btn about-me__btn" btn-more-about>
+            <a href="#more-about">More about me</a>
+          </button>
+        </div>
+        <div class="about-me__img"></div>
+      </section>
+
+      <section id="more-about" class="section more-about__section" more-about-open>
+        <div class="container">
+          <div class="more-about__inner">
+            <h2 class="heading-h2 heading-h2--on-light more-about__title">Andrii Barchuk</h2>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              <a href="mailto:abarchuk1976@gmail.com" class="more-about__email"
+                >abarchuk1976@gmail.com</a
+              ><br />
+              <a href="tel:=+380501616709" class="more-about__mobile">+380 (50) 16-16-709</a><br />
+              Kyiv, Ukraine<br />
+              22.07.1976<br />
+              married, have two daughters
+            </p>
+          </div>
+
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle">Languages</h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              English: intermadiate<br />
+              Ukrainian: native<br />
+              Russian: native
+            </p>
+          </div>
+
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle">Academic summary</h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              The Master's degree in Cybernetics (1999)<br />
+              Specialization: Applied Mathematics<br />
+              T.Shevchenko Kyiv National University, Faculty of Cybernetics, Kyiv, Ukraine
+            </p>
+          </div>
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle"></h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              Certificate of Fullstack Developer's courses (2022)<br />
+              Specialization: Frontend/Backend Developer<br />
+              GoIT online school, Kyiv, Ukraine
+            </p>
+          </div>
+
+          <button type="button" class="more-btn more-about__btn" btn-close-more-about>
+            <a href="#skillset">Hide about me</a>
+          </button>
+        </div>
+      </section>
+
+      <section id="skillset" class="section">
+        <div class="container">
+          <div class="skillset__upperblock">
+            <h2 class="heading-h2 skillset__title skillset__title--append">Skillset</h2>
+            <p class="paragraph-18 skillset__text">
+              With skills in over 8 different fields of Fullstack Developing, I am the perfect
+              person to hire when it comes to a full fledged project. Whatever your needs are, I can
+              pretty much take on any challenge.
+            </p>
+          </div>
+
+          <div class="skillset__block">
+            <h3 class="skillset__subtitle skillset__subtitle--append skillset__subtitle--accent">
+              Techskills
+            </h3>
+            <ul class="skillset__list">
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-html"></use>
+                </svg>
+                <h3 class="skillset__subtitle">HTML5</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-css"></use>
+                </svg>
+                <h3 class="skillset__subtitle">CSS3</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-js"></use>
+                </svg>
+                <h3 class="skillset__subtitle">Javascript</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-sass"></use>
+                </svg>
+                <h3 class="skillset__subtitle">SASS</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-react"></use>
+                </svg>
+                <h3 class="skillset__subtitle">React.js</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-node"></use>
+                </svg>
+                <h3 class="skillset__subtitle">Node.js</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-bem"></use>
+                </svg>
+                <h3 class="skillset__subtitle">BEM</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-photoshop"></use>
+                </svg>
+                <h3 class="skillset__subtitle">Photoshop</h3>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skillset__block">
+            <h3 class="skillset__subtitle skillset__subtitle--append skillset__subtitle--accent">
+              Softskills
+            </h3>
+            <ul class="skillset__list">
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+                <h3 class="skillset__subtitle">Github</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-english"></use>
+                </svg>
+                <h3 class="skillset__subtitle">English</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-scrum"></use>
+                </svg>
+                <h3 class="skillset__subtitle">SCRUM</h3>
+              </li>
+              <li class="skillset__item">
+                <svg class="skillset__icon">
+                  <use href="./images/icons.svg#icon-figma"></use>
+                </svg>
+                <h3 class="skillset__subtitle">Figma</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <strong class="overline-16">My projects</strong>
+          <h2 class="heading-h2">Work that I’ve done for the past time</h2>
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <picture>
+                <source
+                  srcset="./images/webstudio-img-688.jpeg 1x, ./images/webstudio-img-688@2x.jpeg 2x"
+                  media="screen and (max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/webstudio-img-1120.jpeg    1x,
+                    ./images/webstudio-img-1120@2x.jpeg 2x
+                  "
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/webstudio-img-716.jpeg 1x, ./images/webstudio-img-716@2x.jpeg 2x"
+                  media="screen and (min-width: 1200px)"
+                />
+                <img src="./images/webstudio-img-716.jpeg" alt="Webstudio project" />
+              </picture>
+
+              <h3 class="portfolio__subtitle"></h3>
+              <p></p>
+            </li>
+            <li class="portfolio__item">
+              <img src="" alt="" />
+              <h3 class="portfolio__subtitle"></h3>
+              <p></p>
+            </li>
+            <li class="portfolio__item">
+              <img src="" alt="" />
+              <h3 class="portfolio__subtitle"></h3>
+              <p></p>
+            </li>
+            <li class="portfolio__item">
+              <img src="" alt="" />
+              <h3 class="portfolio__subtitle"></h3>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section linkedin">
+        <div class="container">
+          <h2 class="heading-h2">LinkedIn</h2>
+          <p></p>
+          <button type="button">More about me</button>
+          <img src="" alt="Flying plane" />
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-h2">This is what people say about me</h2>
+          <p></p>
+          <button type="button">See all testimonials</button>
+          <ul class="about-me">
+            <li class="about-me__item">
+              <img src="" alt="" />
+              <h3 class="heading-18"></h3>
+              <p class="paragraph-18"></p>
+            </li>
+            <li class="about-me__item">
+              <img src="" alt="" />
+              <h3 class="heading-18"></h3>
+              <p class="paragraph-18"></p>
+            </li>
+            <li class="about-me__item">
+              <img src="" alt="" />
+              <h3 class="heading-18"></h3>
+              <p class="paragraph-18"></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-h2">Let’s get started</h2>
+          <p class="paragraph-18">
+            Now that you know a lot about me, let me know if you are interested to work with me.
+          </p>
+          <form class="contact">
+            <div role="group">
+              <label for="user-name">
+                Name:
+                <input type="text" id="user-name" pattern="[А-Яа-я]\s[А-Яа-я]\s[А-Яа-я]" required />
+              </label>
+              <label for="user-email">
+                E-mail:
+                <input
+                  type="email"
+                  id="user-email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                  required
+                />
+              </label>
+              <label for="user-message">
+                <textarea id="user-message" rows="3"> </textarea>
+              </label>
+              <button type="submit">Let’s get started</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href="" class="logo">
+          <svg>
+            <use></use>
+          </svg>
+        </a>
+
+        <address>
+          <a href="tel:+380501616709"> +380-50-16 16 709 </a>
+          <a href="mailto:abarchuk1976@gmail.com">abarchuk1976@gmail.com</a>
+        </address>
+
+        <b>Follow me:</b>
+        <ul class="social-string">
+          <li class="social-string__item">
+            <svg>
+              <use></use>
+            </svg>
+          </li>
+          <li class="social-string__item">
+            <svg>
+              <use></use>
+            </svg>
+          </li>
+          <li class="social-string__item">
+            <svg>
+              <use></use>
+            </svg>
+          </li>
+        </ul>
+        <p>
+          Copyright &#169; 2022 <span class="copyright-accent">Andrii Barchuk</span>.all right
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/more-about.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/menu-arrow.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

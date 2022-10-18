@@ -1,0 +1,12 @@
+@mixin positioning-flex($type: flex, $jc: center, $ai: center) {
+  display: #{$type};
+  justify-content: #{$jc};
+  align-items: #{$ai};
+}
+
+@mixin font-params($fs: 1.125rem, $fw: $fontWeightBold, $lh: 1.2, $c: $colorHeading) {
+  font-size: #{$fs};
+  font-weight: #{$fw};
+  line-height: #{$lh};
+  color: #{$c};
+}

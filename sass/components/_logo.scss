@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+  color: $colorHeading;
+  background-color: transparent;
+  padding: 24px 0;
+}
+
+.logo__decoration {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.logo__decoration::before {
+  position: absolute;
+  left: 41.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $colorAccentSecondary;
+  border: none;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
