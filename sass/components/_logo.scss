@@ -22,11 +22,11 @@
   display: inline-block;
   vertical-align: middle;
   content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
   background-color: $colorAccentSecondary;
   border: none;
-  margin: 0 5px;
+  margin: 0 20px;
   flex-shrink: 0;
 }

@@ -30,12 +30,12 @@
   width: 100%;
   height: 450px;
   background-color: $bgcAccentSecondary;
-  background-image: url(../images/sphere-767.jpeg);
+  background-image: url(../images/sphere-767.jpg);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/sphere-1534.jpeg);
+    background-image: url(../images/sphere-1534.jpg);
   }
   background-position: center;
   background-size: cover;
@@ -44,22 +44,22 @@
   @media screen and (min-width: 768px) {
     width: 50%;
     height: 600px;
-    background-image: url(../images/sphere-600.jpeg);
+    background-image: url(../images/sphere-600.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/sphere-1200.jpeg);
+      background-image: url(../images/sphere-1200.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/sphere-800.jpeg);
+    background-image: url(../images/sphere-800.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/sphere-1600.jpeg);
+      background-image: url(../images/sphere-1600.jpg);
     }
   }
 }
