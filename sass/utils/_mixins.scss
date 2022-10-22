@@ -10,3 +10,124 @@
   line-height: #{$lh};
   color: #{$c};
 }
+@mixin section($p-top: 94px, $p-bottom: 94px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+@mixin fonts($fs, $lh, $fw, $ls) {
+
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
+
+@mixin flex-based($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+
+}
+
+
+
+@mixin btn-size($size) {
+  @if $size =="small" {
+    max-width: 160px;
+    min-width: 120px;
+    font-size: 12px;
+  }
+
+  @if $size =="medium" {
+    max-width: 180px;
+    min-width: 140px;
+    font-size: 16px;
+  }
+
+  @if $size =="large" {
+    max-width: 220px;
+    min-width: 160px;
+    font-size: 24px;
+  }
+}
+
+@mixin fonts($fz, $lh: 1.67, $ls: 0.02em, $fw: null) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin flex-based($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mq($type) {
+  $mob: 320px;
+  $tab: 768px;
+  $desk: 1200px;
+
+  @if $type ==mob-only {
+    @media screen and (max-width: ($tab - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $type ==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $type ==tab-only {
+    @media screen and (min-width: $tab) and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $type ==no-desk {
+    @media screen and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+}
+
+@mixin section($p-top: 60px, $p-bottom: 60px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+@mixin section($p-top: 94px, $p-bottom: 94px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+// @mixin fonts($fs, $lh, $fw, $ls) {
+
+//   font-size: $fs;
+//   line-height: $lh;
+//   font-weight: $fw;
+//   letter-spacing: $ls;
+// }
+
+@mixin flex-based($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+
+}

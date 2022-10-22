@@ -66,3 +66,69 @@ $transitionTimingSecondary: ease;
 
 $shadowMenu: 0px 4px 8px rgba(255, 255, 255, 0.04), 0px 2px 4px rgba(255, 255, 255, 0.08),
   0px 1px 3px rgba(255, 255, 255, 0.16);
+
+
+$main-font: "Open Sans", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+
+
+$primary-txt--mode-light: #555555;
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --white-txt-cl: #FFFFFF;
+  --black-txt-cl: #212121;
+  --gray-txt-cl: #757575;
+  --blu-cl: #ff6b0a;
+  --bg-cl: #2F303A;
+
+
+  --accent-cl: #ff6c00;
+  
+  
+    --secondary-txt--mode-light: #303030;
+    --main-txt--mode-light: #555555;
+  
+  
+    --primary-txt--mode-dark: #ffffff;
+    --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
+    --main-txt--mode-dark: #9da4bd;
+  
+  
+    --primary-bg--mode-light: #ffffff;
+    --secondary-bg--mode-light: #f7f7f7;
+  
+  
+    --primary-bg--mode-dark: #191c26;
+    --secondary-bg--mode-dark: #111319;
+  
+  
+    --border-cl-unselected: rgba(157, 164, 189, 0.4);
+    --border-cl-selected: #ffffff;
+  
+    --checkbox-accent: #ff6c00;
+    --checkbox-hover: #555555;
+  
+    --anim-fast: 250ms ease-in;
+    --anim-slow: 500ms ease-in-out;
+  
+  
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --white-txt-cl: #FFFFFF;
+    --black-txt-cl: #212121;
+    --gray-txt-cl: #757575;
+    --blu-cl: #b8860b;
+    --bg-cl: #2F303A;
+}
