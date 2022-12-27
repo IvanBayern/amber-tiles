@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Amber Tiles</title>
+    <title>Made of Amber</title>
 
-    <meta content="Andrii Barchuk is a Frontend Developer from Kyiv, Ukraine." name="description" />
-    <meta content="Andrii Barchuk - Frontend Developer" property="og:title" />
+    <meta content="Made of Amber" name="description" />
+    <meta content="Made of Amber" property="og:title" />
     <meta
-      content="Andrii Barchuk is a Frontend Developer from Kyiv, Ukraine."
+      content="Made of Amber"
       property="og:description"
     />
     <link
@@ -32,7 +32,15 @@
     <header class="header">
       <div class="header__container">
         <a id="logo" href="/" class="logo logo_header"
-          ><span class="logo__decoration">Amber&nbsp;&nbsp;&nbsp;Style</span>
+          ><picture class="">
+            <source srcset="./images/88.jpg 1x, ./images/176.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+            <source srcset="./images/88.jpg 1x, ./images/176.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg" />
+            <source srcset="./images/1.jpg 1x, ./images/40.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+            <img class="" srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x"
+              alt="My black and white photo" />
+          </picture>
+          <!-- <span class="logo__decoration">Amber&nbsp;&nbsp;&nbsp;Style</span> -->
         </a>
         <button
           class="menu__button"
@@ -91,7 +99,7 @@
               type="image/jpeg"
             />
             <source
-              srcset="./images/hero-767.jpg 1x, ./images/hero-1534.jpeg 2x"
+              srcset="./images/hero-767.jpg 1x, ./images/hero-1500.jpg 2x"
               media="(max-width: 767px)"
               type="image/jpeg"
             />
@@ -105,7 +113,7 @@
 
         <div class="container__hero">
           <h1 class="hero__heading" data-aos="fade-left" data-aos-duration="1000">
-            Amber Style<br />
+            Made of Amber<br />
             presents luxury tiles
 
             <span class="hero__heading--accent">made of natural Baltic amber</span>
@@ -258,7 +266,7 @@
                         <source srcset="./images/honey.jpg 1x,
                                                     ./images/honey.jpg 2x"
                           media="(min-width: 480px)" />
-                        <img class="works-card__img" src="./images/honey.jpg" alt="Веб-сайт" />
+                        <img class="works-card__img" src="./images/honey.jpg" alt="Amber tiles" />
                       </picture>
               
               
@@ -288,7 +296,7 @@
               
                         <source srcset="./images/hero-750.jpg 1x,
                                                       ./images/caramel.jpg 2x" media="(min-width: 480px)" />
-                        <img class="works-card__img" src="./images/caramel.jpg" alt="Дизайн" />
+                        <img class="works-card__img" src="./images/caramel.jpg" alt="Amber tiles" />
                       </picture>
               
               
@@ -316,7 +324,7 @@
               
                         <source srcset="./images/hero-750.jpg 1x,
                                                     ./images/fantasyMix.jpg 2x" media="(min-width: 480px)" />
-                        <img class="works-card__img" src="./images/fantasyMix.jpg" alt="Приложение" />
+                        <img class="works-card__img" src="./images/fantasyMix.jpg" alt="Amber tiles" />
                       </picture>
               
                       <div class="works-card__overlay">
@@ -366,7 +374,7 @@
               
                         <source srcset="./images/royalfentezy.jpg 1x,
                                                     ./images/royalfentezy.jpg 2x" media="(min-width: 480px)" />
-                        <img class="works-card__img" src="./images/royalfentezy.jpg" alt="Коробки" />
+                        <img class="works-card__img" src="./images/royalfentezy.jpg" alt="Amber tiles" />
                       </picture>
               
                       <div class="works-card__overlay">
@@ -394,7 +402,7 @@ smoke will not leave you indifferent.</p>
               
                         <source srcset="./images/blackprince .jpg 1x,
                                                     ./images/blackprince .jpg 2x" media="(min-width: 480px)" />
-                        <img class="works-card__img" src="./images/blackprince.jpg" alt="Веб-сайт" />
+                        <img class="works-card__img" src="./images/blackprince.jpg" alt="Amber tiles" />
                       </picture>
               
                       <div class="works-card__overlay">
@@ -422,10 +430,25 @@ This color looks very beautiful, creates a special deep atmosphere, soothing, ab
     <footer>
       <div class="container">
         <a href="" class="logo">
-          <svg>
-            <use></use>
-          </svg>
+          <picture class="">
+            <source srcset="./images/88.jpg 1x, ./images/176.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+            <source srcset="./images/88.jpg 1x, ./images/176.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)"
+              type="image/jpeg" />
+            <source srcset="./images/1.jpg 1x, ./images/40.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+            <img class="" srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x" alt="My black and white photo" />
+          </picture>
         </a>
+        <address class="footer__address">
+          <ul class="address list">
+            <li class="address__item"><a class="address__link link " href="https://goo.gl./maps/wizjQyX9kH2uUNJ5A"
+                target="_blank" rel="noreferrer noopener">80-890 Gdansk, Poland</a></li>
+            <li class="address__item"><a class="address__link link address__link--color"
+                href="mailto:info@devstudio.com">office@madeofamber.com</a> </li>
+            <li class="address__item"><a class="address__link link address__link--color" href="tel:+48532281253">
+                +48532281253</a></li>
+          </ul>
+        
+        </address>
 
 
         <p>
