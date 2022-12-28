@@ -426,7 +426,7 @@ body {
 }
 .menu__link--accent:hover, .menu__link--accent:focus {
   color: #ffffff;
-  background-color: #1a8870;
+  background-color: #ff6b0a;
 }
 
 .menu__btn-arrow {
@@ -729,7 +729,7 @@ body {
   margin-bottom: 1rem;
 }
 .experience__subtitle--accent-primary {
-  color: #25c2a0;
+  color: #ff6b0a;
 }
 .experience__subtitle--accent-secondary {
   color: #ff6b0a;
@@ -744,9 +744,14 @@ address {
   margin-top: 20px;
   font-style: normal;
 }
+@media screen and (max-width: 767px) {
+  address {
+    text-align: center;
+  }
+}
 
 .address__link {
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   color: var(--white-txt-cl);
   -webkit-transition-property: color;
@@ -787,6 +792,12 @@ address {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo_footer {
+    display: none;
   }
 }
 
