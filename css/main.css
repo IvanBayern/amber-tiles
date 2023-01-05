@@ -629,7 +629,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container__hero {
     position: absolute;
-    right: 72px;
+    right: 32px;
     top: 50%;
     width: calc(100% - 675px);
     max-width: 1110px;
