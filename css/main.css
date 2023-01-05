@@ -801,6 +801,11 @@ address {
   }
 }
 
+.card__name {
+  text-align: center;
+  color: #181823;
+}
+
 @media screen and (min-width: 768px) {
   .about-me__section {
     display: -webkit-box;
